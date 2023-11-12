@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="Label_user_name">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>60</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_User">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>40</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Administrator</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="button_add_new_equipment">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>390</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>false</bool>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_lists_or_profile">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Black</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Add New Equipment</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::LeftArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Header">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>760</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 102, 0);
+background-color: rgb(255, 255, 0);
+border-color: rgb(255, 102, 0);
+border: 2px solid #ff6600; 
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>SUNVOLTAGE INCORPORATION</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Equipment_Quantity">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>270</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Quantity</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Equipment_ID">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Equipment ID</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Equipment_Price">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>270</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Price</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Equipment_Name">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>270</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Equipment Name</string>
+   </property>
+  </widget>
+  <zorder>Header</zorder>
+  <zorder>Label_user_name</zorder>
+  <zorder>label_User</zorder>
+  <zorder>button_add_new_equipment</zorder>
+  <zorder>label_lists_or_profile</zorder>
+  <zorder>backButton</zorder>
+  <zorder>Equipment_Quantity</zorder>
+  <zorder>Equipment_ID</zorder>
+  <zorder>Equipment_Price</zorder>
+  <zorder>Equipment_Name</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

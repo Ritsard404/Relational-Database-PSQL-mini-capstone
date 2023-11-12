@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="Label_admin_name">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>60</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_User">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>40</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Administrator</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="button_add_material">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>370</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>New Material</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>false</bool>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_lists_or_profile">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Black</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Inventory List</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_equipment">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>100</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>ArrowCursor</cursorShape>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QPushButton:hover, QPushButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Equipments</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>440</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::LeftArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Header">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>30</y>
+     <width>760</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 102, 0);
+background-color: rgb(255, 255, 0);
+border-color: rgb(255, 102, 0);
+border: 2px solid #ff6600; 
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>SUNVOLTAGE INCORPORATION</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="button_material">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>100</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QPushButton:hover, QPushButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Materials</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tablewidget_materials_list">
+   <property name="geometry">
+    <rect>
+     <x>185</x>
+     <y>160</y>
+     <width>675</width>
+     <height>195</height>
+    </rect>
+   </property>
+   <property name="selectionBehavior">
+    <enum>QAbstractItemView::SelectRows</enum>
+   </property>
+   <property name="rowCount">
+    <number>3</number>
+   </property>
+   <property name="columnCount">
+    <number>5</number>
+   </property>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderStretchLastSection">
+    <bool>false</bool>
+   </attribute>
+   <row/>
+   <row/>
+   <row/>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Quantity</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Material Name</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Price</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Project Assigned</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label_total_material_price">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>400</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Total Materials Price: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_total_num_material">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>360</y>
+     <width>231</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Total of Materials: </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_lists_or_profile_2">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>120</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Black</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>List of Materials</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="button_delete_material">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>410</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Delete</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>false</bool>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>220</y>
+     <width>127</width>
+     <height>112</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QComboBox" name="update_material_projs_ddl">
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QComboBox:focus {
+    border: 2px solid #ff6600;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Projects</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="update_materials_ddl">
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QComboBox:focus {
+    border: 2px solid #ff6600;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Materials</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="update_material_quantity">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Quantity</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="button_update_material">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+      </property>
+      <property name="text">
+       <string>Add Quantity</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+      <property name="arrowType">
+       <enum>Qt::NoArrow</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>360</y>
+     <width>127</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_project_materials">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Assign Material</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="assign_proj_ddl">
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QComboBox:focus {
+    border: 2px solid #ff6600;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Projects</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="assign_materials_ddl">
+      <property name="font">
+       <font>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox:focus {
+    border: 2px solid #ff6600;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Materials</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="assign_quantity">
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="placeholderText">
+       <string>Quantity</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QToolButton" name="button_assign_material">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+      </property>
+      <property name="text">
+       <string>Assign</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+      <property name="checkable">
+       <bool>true</bool>
+      </property>
+      <property name="checked">
+       <bool>false</bool>
+      </property>
+      <property name="toolButtonStyle">
+       <enum>Qt::ToolButtonTextOnly</enum>
+      </property>
+      <property name="autoRaise">
+       <bool>false</bool>
+      </property>
+      <property name="arrowType">
+       <enum>Qt::NoArrow</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>Header</zorder>
+  <zorder>Label_admin_name</zorder>
+  <zorder>label_User</zorder>
+  <zorder>button_add_material</zorder>
+  <zorder>label_lists_or_profile</zorder>
+  <zorder>button_equipment</zorder>
+  <zorder>backButton</zorder>
+  <zorder>button_material</zorder>
+  <zorder>tablewidget_materials_list</zorder>
+  <zorder>label_total_material_price</zorder>
+  <zorder>label_total_num_material</zorder>
+  <zorder>label_lists_or_profile_2</zorder>
+  <zorder>button_delete_material</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

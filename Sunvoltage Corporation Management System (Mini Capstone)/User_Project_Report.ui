@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_lists_or_profile">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Black</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Report</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_User">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>40</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>User</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>440</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::LeftArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Label_user_name">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>60</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Header">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>30</y>
+     <width>760</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 102, 0);
+background-color: rgb(255, 255, 0);
+border-color: rgb(255, 102, 0);
+border: 2px solid #ff6600; 
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>SUNVOLTAGE INCORPORATION</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="submit_inventory_button">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>410</y>
+     <width>201</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Submit Inventory Report</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="submit_proj_report">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>410</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Submit Project Report</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>150</y>
+     <width>258</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_lists_or_profile_3">
+      <property name="font">
+       <font>
+        <family>Segoe UI Black</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Inventory Update</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_lists_or_profile_5">
+      <property name="font">
+       <font>
+        <family>Segoe UI Black</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Activity</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit_inventory"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>150</y>
+     <width>258</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="label_lists_or_profile_2">
+      <property name="font">
+       <font>
+        <family>Segoe UI Black</family>
+        <pointsize>14</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Project Update</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_lists_or_profile_4">
+      <property name="font">
+       <font>
+        <family>Segoe UI Black</family>
+        <pointsize>12</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Activity</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTextEdit" name="textEdit_proj"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>320</y>
+     <width>231</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_lists_or_profile_6">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>12</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Start Date:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="proj_start_date">
+        <property name="styleSheet">
+         <string notr="true">QDateEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QDateEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QDateEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_lists_or_profile_7">
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>12</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>End Date: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="proj_end_date">
+        <property name="styleSheet">
+         <string notr="true">QDateEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QDateEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QDateEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+        </property>
+        <property name="calendarPopup">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_lists_or_profile_8">
+   <property name="geometry">
+    <rect>
+     <x>517</x>
+     <y>332</y>
+     <width>161</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>12</pointsize>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Estimated Time Arrival:</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="inventory_arival_date">
+   <property name="geometry">
+    <rect>
+     <x>684</x>
+     <y>332</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QDateEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QDateEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="maximumDate">
+    <date>
+     <year>9999</year>
+     <month>12</month>
+     <day>24</day>
+    </date>
+   </property>
+   <property name="minimumDate">
+    <date>
+     <year>1752</year>
+     <month>9</month>
+     <day>18</day>
+    </date>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>Header</zorder>
+  <zorder>label_lists_or_profile</zorder>
+  <zorder>label_User</zorder>
+  <zorder>backButton</zorder>
+  <zorder>Label_user_name</zorder>
+  <zorder>label_lists_or_profile_2</zorder>
+  <zorder>label_lists_or_profile_3</zorder>
+  <zorder>textEdit_proj</zorder>
+  <zorder>label_lists_or_profile_4</zorder>
+  <zorder>textEdit_inventory</zorder>
+  <zorder>label_lists_or_profile_5</zorder>
+  <zorder>proj_start_date</zorder>
+  <zorder>proj_end_date</zorder>
+  <zorder>label_lists_or_profile_6</zorder>
+  <zorder>label_lists_or_profile_7</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>submit_inventory_button</zorder>
+  <zorder>submit_proj_report</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

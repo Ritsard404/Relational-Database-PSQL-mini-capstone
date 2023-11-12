@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>497</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="label_lists_or_profile">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>90</y>
+     <width>291</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI Black</family>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>New Project</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="adminNamelbl">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>60</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string> Name</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="Header">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>760</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 102, 0);
+background-color: rgb(255, 255, 0);
+border-color: rgb(255, 102, 0);
+border: 2px solid #ff6600; 
+border-radius: 10px;
+</string>
+   </property>
+   <property name="text">
+    <string>SUNVOLTAGE INCORPORATION</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <property name="indent">
+    <number>20</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_User">
+   <property name="geometry">
+    <rect>
+     <x>680</x>
+     <y>40</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Administrator</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="backButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>440</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Back</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextBesideIcon</enum>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::LeftArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="proj_id">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>150</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Project ID</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="proj_name">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>180</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Project Name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="proj_address">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>205</y>
+     <width>201</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QLineEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QLineEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+   <property name="placeholderText">
+    <string>Address</string>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="proj_start">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>230</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QDateEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QDateEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::UpDownArrows</enum>
+   </property>
+   <property name="displayFormat">
+    <string>MM/dd/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2000</year>
+     <month>1</month>
+     <day>22</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QDateEdit" name="proj_end">
+   <property name="geometry">
+    <rect>
+     <x>460</x>
+     <y>260</y>
+     <width>111</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDateEdit {
+	border: 1px solid #616161;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+QDateEdit::placeholder {
+    color: #a9a9a9;
+}
+
+QDateEdit:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="buttonSymbols">
+    <enum>QAbstractSpinBox::UpDownArrows</enum>
+   </property>
+   <property name="displayFormat">
+    <string>MM/dd/yyyy</string>
+   </property>
+   <property name="calendarPopup">
+    <bool>true</bool>
+   </property>
+   <property name="timeSpec">
+    <enum>Qt::LocalTime</enum>
+   </property>
+   <property name="date">
+    <date>
+     <year>2000</year>
+     <month>1</month>
+     <day>22</day>
+    </date>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="leader_ddl">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>290</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox:focus {
+    border: 2px solid #ff6600;
+}</string>
+   </property>
+   <property name="placeholderText">
+    <string>Select...</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="button_save_proj">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>340</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolButton {
+				color: rgb(255, 102, 0);
+                background-color: rgb(255, 255, 0);
+                border-color: rgb(255, 102, 0);
+                border: 2px solid #ff6600;
+                border-radius: 10px;
+            }
+            QToolButton:hover, QToolButton:pressed {
+                background-color: rgb(255, 183, 0);
+            }</string>
+   </property>
+   <property name="text">
+    <string>Save Project</string>
+   </property>
+   <property name="icon">
+    <iconset theme="dialog-error"/>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextOnly</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>false</bool>
+   </property>
+   <property name="arrowType">
+    <enum>Qt::NoArrow</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_project_start">
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>235</y>
+     <width>113</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Project Date Start:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_project_name">
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>181</y>
+     <width>87</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Project Name:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_project_address">
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>208</y>
+     <width>100</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Project Address:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_project_leader">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>290</y>
+     <width>153</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Assigned Project Leader:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_project_deadline">
+   <property name="geometry">
+    <rect>
+     <x>341</x>
+     <y>262</y>
+     <width>106</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Project Deadline:</string>
+   </property>
+  </widget>
+  <zorder>Header</zorder>
+  <zorder>label_lists_or_profile</zorder>
+  <zorder>adminNamelbl</zorder>
+  <zorder>label_User</zorder>
+  <zorder>backButton</zorder>
+  <zorder>proj_id</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>layoutWidget_2</zorder>
+  <zorder>proj_name</zorder>
+  <zorder>proj_address</zorder>
+  <zorder>proj_start</zorder>
+  <zorder>proj_end</zorder>
+  <zorder>leader_ddl</zorder>
+  <zorder>button_save_proj</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>proj_id</tabstop>
+  <tabstop>proj_name</tabstop>
+  <tabstop>proj_address</tabstop>
+  <tabstop>proj_start</tabstop>
+  <tabstop>proj_end</tabstop>
+  <tabstop>leader_ddl</tabstop>
+  <tabstop>button_save_proj</tabstop>
+  <tabstop>backButton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
